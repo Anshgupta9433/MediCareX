@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
 
   const refreshUser = useCallback(async () => {
     try {
-      const stored = storage.getLocal('mediSync_user');
+      const stored = storage.getLocal('MediSync_user');
       if (!stored) return;
 
       const { token } = stored;
@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
       if (data) {
         const updatedUser = { ...data, token: data.token || token };
         setUser(updatedUser);
-        storage.setLocal('mediSync_user', updatedUser);
+        storage.setLocal('MediSync_user', updatedUser);
       }
     } catch (err) {
       if (err.response?.status === 401) logout();
@@ -40,19 +40,19 @@ export const AuthProvider = ({ children }) => {
 
   const login = useCallback((userData) => {
     setUser(userData);
-    storage.setLocal('mediSync_user', userData);
+    storage.setLocal('MediSync_user', userData);
   }, []);
 
   const signup = useCallback((userData) => {
-    storage.setLocal('mediSync_user', userData);
+    storage.setLocal('MediSync_user', userData);
     setUser(userData);
-    storage.removeLocal('mediSync_onboarding_done');
+    storage.removeLocal('MediSync_onboarding_done');
     refreshUser();
   }, [refreshUser]);
 
   useEffect(() => {
     const initAuth = async () => {
-      const stored = storage.getLocal('mediSync_user');
+      const stored = storage.getLocal('MediSync_user');
       if (stored) {
         try {
           if (stored?.token) {
@@ -63,7 +63,7 @@ export const AuthProvider = ({ children }) => {
               if (data) {
                 const updatedUser = { ...data, token: data.token || stored.token };
                 setUser(updatedUser);
-                storage.setLocal('mediSync_user', updatedUser);
+                storage.setLocal('MediSync_user', updatedUser);
               }
             } catch (refreshErr) {
               console.warn('📡 [AUTH SYNC]: Background refresh failed, keeping local session.');
@@ -83,7 +83,7 @@ export const AuthProvider = ({ children }) => {
 
 
     const handleStorageChange = (e) => {
-      if (e.key === 'mediSync_user' && !e.newValue) {
+      if (e.key === 'MediSync_user' && !e.newValue) {
         logout();
       }
     };

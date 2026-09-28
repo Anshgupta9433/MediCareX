@@ -4,7 +4,7 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    const saved = localStorage.getItem('medisync-theme');
+    const saved = localStorage.getItem('MediSync-theme');
     if (saved) return saved === 'dark';
     return false; 
   });
@@ -13,10 +13,10 @@ export const ThemeProvider = ({ children }) => {
     const root = window.document.documentElement;
     if (isDarkMode) {
       root.classList.add('dark');
-      localStorage.setItem('medisync-theme', 'dark');
+      localStorage.setItem('MediSync-theme', 'dark');
     } else {
       root.classList.remove('dark');
-      localStorage.setItem('medisync-theme', 'light');
+      localStorage.setItem('MediSync-theme', 'light');
     }
   }, [isDarkMode]);
 

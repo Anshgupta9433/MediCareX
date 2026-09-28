@@ -5,7 +5,7 @@ const FloatingSupport = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent('Hello MediSync Support, I need clinical assistance.');
+    const message = encodeURIComponent('Hello AI Healthcare tracking app Support, I need clinical assistance.');
     window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
   };
 

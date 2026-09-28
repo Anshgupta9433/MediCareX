@@ -7,7 +7,7 @@ const SEO = ({
   name = 'MediSync',
   type = 'website',
   image = 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200&h=630',
-  url = 'https://medisync.app/',
+  url = 'https://MediSync.app/',
 }) => {
   const fullTitle = title
     ? `${title} | ${name}`
@@ -29,7 +29,7 @@ const SEO = ({
       <meta property="og:site_name" content={name} />
 
       {}
-      <meta name="twitter:creator" content="@medisync_core" />
+      <meta name="twitter:creator" content="@MediSync_core" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />

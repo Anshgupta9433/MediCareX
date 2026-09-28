@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./frontend/src/assets/images/medisync_hero_banner.png" width="100%" style="border-radius: 2.5rem; box-shadow: 0 20px 50px rgba(0,0,0,0.15);" />
+  <img src="./frontend/src/assets/images/MediSync_hero_banner.png" width="100%" style="border-radius: 2.5rem; box-shadow: 0 20px 50px rgba(0,0,0,0.15);" />
 
   <br />
   <br />
@@ -15,7 +15,7 @@
   | **Design Prototype** | [![Figma](https://img.shields.io/badge/Figma-Clinical_Design-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/proto/K0gasIFRWzrAlnWWhUy5vE/Untitled?page-id=3%3A2&node-id=3-125&p=f&viewport=463%2C474%2C0.05&t=AHoOQahMQPxluVVC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3%3A125) | UI/UX Blueprint |
   | **Production Node** | [![Live Demo](https://img.shields.io/badge/Live_Project-View_Live-2ECC71?style=for-the-badge&logo=vercel&logoColor=white)](https://medi-sync-rho.vercel.app) | Live Clinical Environment |
   | **API Intelligence** | [![Postman](https://img.shields.io/badge/Postman-API_Documentation-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://documenter.getpostman.com/view/50839186/2sBXqJLgPy) | Technical Handshake Docs |
-  | **Backend Cluster** | [![Backend API](https://img.shields.io/badge/Backend_API-Live_Endpoints-000000?style=for-the-badge&logo=render&logoColor=white)](https://medisync-gxiy.onrender.com) | Clinical Logic Node |
+  | **Backend Cluster** | [![Backend API](https://img.shields.io/badge/Backend_API-Live_Endpoints-000000?style=for-the-badge&logo=render&logoColor=white)](https://MediSync-gxiy.onrender.com) | Clinical Logic Node |
   | **Video Walkthrough** | [![YouTube Demo](https://img.shields.io/badge/YouTube-Watch_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/0iB2YEnbtSw?si=_XlKFlHLEPg5F1aQ) | Clinical Operation Guide |
 
   <br />
@@ -120,7 +120,7 @@ graph TD
 ## 📂 Project Structure
 
 ```text
-mediSync/
+MediSync/
 ├── frontend/               # Clinical Interface (Vite + React)
 │   ├── src/
 │   │   ├── components/     # High-fidelity reusable UI nodes
@@ -142,12 +142,12 @@ mediSync/
 ## 📸 Clinical Interface Gallery
 
 <div align="center">
-  <img src="./frontend/src/assets/images/medisync_platform_overview.png" width="100%" style="border-radius: 2rem; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+  <img src="./frontend/src/assets/images/MediSync_platform_overview.png" width="100%" style="border-radius: 2rem; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
   <p><i>The MediSync Platform Overview: A Unified Hub for Clinical Operations</i></p>
 
   <br />
 
-  <img src="./frontend/src/assets/images/medisync_record_vault.png" width="100%" style="border-radius: 2rem; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+  <img src="./frontend/src/assets/images/MediSync_record_vault.png" width="100%" style="border-radius: 2rem; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
   <p><i>The Secured Clinical Dossier: Neumorphic Grid & Timeline Synchronization</i></p>
 
   <br />
@@ -163,7 +163,7 @@ mediSync/
 ### **1. Clone the Protocol**
 ```bash
 git clone https://github.com/priyabratasahoo780/Resume-generater.git
-cd Resume-generater/mediSync
+cd Resume-generater/MediSync
 ```
 
 ### **2. Orchestrate Backend Intelligence**
